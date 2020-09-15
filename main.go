@@ -33,7 +33,7 @@ func main() {
 		s.Join(msg)
 		sockMap[msg] = s.ID()
 		s.Emit("connection", "have "+s.ID())
-		//s.Emit("reply", "have "+msg)
+
 	})
 
 	//server.OnEvent("/chat", "msg", func(s socketio.Conn, msg string) string {

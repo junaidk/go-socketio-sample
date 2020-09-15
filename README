@@ -1,0 +1,24 @@
+## install go
+
+https://golang.org/doc/install
+
+## run server
+
+`go run main.go`
+
+## implementing your client
+
+Send a request on websocket with the message `username` and argument "clientID".
+
+Also, implement `message` and `reply`
+
+## running sample client
+
+`go run client.go <clientID>`
+
+## send notification to connected client
+
+Call server REST endpoint ( this just for testing)
+`curl 'localhost:8080/ping?name=<clientID>'`
+
+This will send `hello there` message to client.
